@@ -16,6 +16,7 @@
 		200BB14F2C5C896200A8071F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200BB14E2C5C896200A8071F /* Assets.xcassets */; };
 		200BB1522C5C896200A8071F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200BB1512C5C896200A8071F /* Preview Assets.xcassets */; };
 		200BB15D2C5C896300A8071F /* VisionOsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BB15C2C5C896300A8071F /* VisionOsTestAppTests.swift */; };
+		20C64C6F2C60839F00B1FBDE /* TableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C64C6E2C60839F00B1FBDE /* TableViewItem.swift */; };
 		20D5EE862C606A72004964AD /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 20D5EE852C606A72004964AD /* XCAFootballDataClient */; };
 		20D5EE892C606AE3004964AD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE882C606AE3004964AD /* TableView.swift */; };
 		20D5EE8C2C606BCD004964AD /* TableListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE8B2C606BCD004964AD /* TableListObservable.swift */; };
@@ -48,6 +49,7 @@
 		200BB1532C5C896200A8071F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200BB1582C5C896300A8071F /* VisionOsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200BB15C2C5C896300A8071F /* VisionOsTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOsTestAppTests.swift; sourceTree = "<group>"; };
+		20C64C6E2C60839F00B1FBDE /* TableViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewItem.swift; sourceTree = "<group>"; };
 		20D5EE882C606AE3004964AD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		20D5EE8B2C606BCD004964AD /* TableListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListObservable.swift; sourceTree = "<group>"; };
 		20D5EE8F2C606C56004964AD /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				20D5EE882C606AE3004964AD /* TableView.swift */,
+				20C64C6E2C60839F00B1FBDE /* TableViewItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				20D5EE8C2C606BCD004964AD /* TableListObservable.swift in Sources */,
 				200BB14B2C5C896000A8071F /* ToggleImmersiveSpaceButton.swift in Sources */,
+				20C64C6F2C60839F00B1FBDE /* TableViewItem.swift in Sources */,
 				20D5EE992C606FB7004964AD /* Utils.swift in Sources */,
 				20D5EE892C606AE3004964AD /* TableView.swift in Sources */,
 				200BB1472C5C896000A8071F /* ContentView.swift in Sources */,

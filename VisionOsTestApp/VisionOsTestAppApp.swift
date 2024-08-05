@@ -14,20 +14,27 @@ struct VisionOsTestAppApp: App {
 
     var body: some Scene {
         WindowGroup {
+            TabView {
+                TableViewItem()
+                    .tabItem {
+                        Label("Standings", systemImage: "table.fill")
+                    }
+            }
             ContentView()
                 .environment(appModel)
         }
-
-        ImmersiveSpace(id: appModel.immersiveSpaceID) {
-            ImmersiveView()
-                .environment(appModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.mixed), in: .mixed)
-     }
+        
+        //        ImmersiveSpace(id: appModel.immersiveSpaceID) {
+        //            ImmersiveView()
+        //                .environment(appModel)
+        //                .onAppear {
+        //                    appModel.immersiveSpaceState = .open
+        //                }
+        //                .onDisappear {
+        //                    appModel.immersiveSpaceState = .closed
+        //                }
+        //        }
+        //        .immersionStyle(selection: .constant(.mixed), in: .mixed)
+        //     }
+    }
 }

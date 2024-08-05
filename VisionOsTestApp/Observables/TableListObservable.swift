@@ -9,12 +9,29 @@ import Foundation
 import Observation
 import XCAFootballDataClient
 
-class TableListObservable: ObservableObject {
+@Observable
+class TableListObservable {
 
     let client = FootballDataClient(apiKey: "")
     
     var fetchState = FetchState<[TeamStandingTable]>.INITIAL
     var standings: [TeamStandingTable]? { fetchState.value }
+    
+    
+    var selectedFilter: FilterOption = .latest
+    var filterOptions : [FilterOption] = {
+        var currentDate = Calendar.current.date(byAdding: .year, value: -4, to: Date())!
+        
+        var options = [FilterOption]()
+        for i in 0..<3 {
+            if let nextYear = Calendar.current.date(byAdding: .year, value: 1, to: currentDate) {
+                options.append(.year(Calendar.current.component(.year, from: nextYear)))
+                currentDate = nextYear
+            }
+        }
+        options.append(.latest)
+        return options
+    }()
     
     func fetchLists(_ competition: Competition) async {
 //        self.fetchState = .INPROGRESS
