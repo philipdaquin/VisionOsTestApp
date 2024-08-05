@@ -16,6 +16,13 @@
 		200BB14F2C5C896200A8071F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200BB14E2C5C896200A8071F /* Assets.xcassets */; };
 		200BB1522C5C896200A8071F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 200BB1512C5C896200A8071F /* Preview Assets.xcassets */; };
 		200BB15D2C5C896300A8071F /* VisionOsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BB15C2C5C896300A8071F /* VisionOsTestAppTests.swift */; };
+		20D5EE862C606A72004964AD /* XCAFootballDataClient in Frameworks */ = {isa = PBXBuildFile; productRef = 20D5EE852C606A72004964AD /* XCAFootballDataClient */; };
+		20D5EE892C606AE3004964AD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE882C606AE3004964AD /* TableView.swift */; };
+		20D5EE8C2C606BCD004964AD /* TableListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE8B2C606BCD004964AD /* TableListObservable.swift */; };
+		20D5EE902C606C56004964AD /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE8F2C606C56004964AD /* FetchState.swift */; };
+		20D5EE942C606F49004964AD /* scorers.json in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EE932C606F49004964AD /* scorers.json */; };
+		20D5EE962C606F92004964AD /* standings.json in Resources */ = {isa = PBXBuildFile; fileRef = 20D5EE952C606F92004964AD /* standings.json */; };
+		20D5EE992C606FB7004964AD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5EE982C606FB7004964AD /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,12 @@
 		200BB1532C5C896200A8071F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		200BB1582C5C896300A8071F /* VisionOsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisionOsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		200BB15C2C5C896300A8071F /* VisionOsTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOsTestAppTests.swift; sourceTree = "<group>"; };
+		20D5EE882C606AE3004964AD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		20D5EE8B2C606BCD004964AD /* TableListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListObservable.swift; sourceTree = "<group>"; };
+		20D5EE8F2C606C56004964AD /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
+		20D5EE932C606F49004964AD /* scorers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = scorers.json; sourceTree = "<group>"; };
+		20D5EE952C606F92004964AD /* standings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = standings.json; sourceTree = "<group>"; };
+		20D5EE982C606FB7004964AD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				200BB1432C5C896000A8071F /* RealityKitContent in Frameworks */,
+				20D5EE862C606A72004964AD /* XCAFootballDataClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +98,17 @@
 		200BB13F2C5C896000A8071F /* VisionOsTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				20D5EE922C606F09004964AD /* Stubs */,
+				20D5EE912C606D8E004964AD /* Config */,
 				200BB1442C5C896000A8071F /* VisionOsTestAppApp.swift */,
 				200BB1462C5C896000A8071F /* ContentView.swift */,
 				200BB1482C5C896000A8071F /* AppModel.swift */,
+				20D5EE8D2C606C3E004964AD /* Model */,
+				20D5EE872C606ACA004964AD /* Views */,
 				200BB14A2C5C896000A8071F /* ToggleImmersiveSpaceButton.swift */,
+				20D5EE8A2C606BBA004964AD /* Observables */,
 				200BB14C2C5C896000A8071F /* ImmersiveView.swift */,
+				20D5EE972C606FAA004964AD /* Utils */,
 				200BB14E2C5C896200A8071F /* Assets.xcassets */,
 				200BB1532C5C896200A8071F /* Info.plist */,
 				200BB1502C5C896200A8071F /* Preview Content */,
@@ -120,6 +140,62 @@
 			path = VisionOsTestAppTests;
 			sourceTree = "<group>";
 		};
+		20D5EE872C606ACA004964AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE882C606AE3004964AD /* TableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20D5EE8A2C606BBA004964AD /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE8B2C606BCD004964AD /* TableListObservable.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
+		20D5EE8D2C606C3E004964AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE8E2C606C46004964AD /* enums */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20D5EE8E2C606C46004964AD /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE8F2C606C56004964AD /* FetchState.swift */,
+			);
+			path = enums;
+			sourceTree = "<group>";
+		};
+		20D5EE912C606D8E004964AD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		20D5EE922C606F09004964AD /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE952C606F92004964AD /* standings.json */,
+				20D5EE932C606F49004964AD /* scorers.json */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		20D5EE972C606FAA004964AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20D5EE982C606FB7004964AD /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +214,7 @@
 			name = VisionOsTestApp;
 			packageProductDependencies = (
 				200BB1422C5C896000A8071F /* RealityKitContent */,
+				20D5EE852C606A72004964AD /* XCAFootballDataClient */,
 			);
 			productName = VisionOsTestApp;
 			productReference = 200BB13D2C5C896000A8071F /* VisionOsTestApp.app */;
@@ -189,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 200BB1342C5C896000A8071F;
+			packageReferences = (
+				20D5EE842C606A72004964AD /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */,
+			);
 			productRefGroup = 200BB13E2C5C896000A8071F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,6 +284,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5EE942C606F49004964AD /* scorers.json in Resources */,
+				20D5EE962C606F92004964AD /* standings.json in Resources */,
 				200BB1522C5C896200A8071F /* Preview Assets.xcassets in Resources */,
 				200BB14F2C5C896200A8071F /* Assets.xcassets in Resources */,
 			);
@@ -223,10 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D5EE8C2C606BCD004964AD /* TableListObservable.swift in Sources */,
 				200BB14B2C5C896000A8071F /* ToggleImmersiveSpaceButton.swift in Sources */,
+				20D5EE992C606FB7004964AD /* Utils.swift in Sources */,
+				20D5EE892C606AE3004964AD /* TableView.swift in Sources */,
 				200BB1472C5C896000A8071F /* ContentView.swift in Sources */,
 				200BB14D2C5C896000A8071F /* ImmersiveView.swift in Sources */,
 				200BB1492C5C896000A8071F /* AppModel.swift in Sources */,
+				20D5EE902C606C56004964AD /* FetchState.swift in Sources */,
 				200BB1452C5C896000A8071F /* VisionOsTestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,10 +579,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		20D5EE842C606A72004964AD /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAFootballDataClient.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		200BB1422C5C896000A8071F /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
+		};
+		20D5EE852C606A72004964AD /* XCAFootballDataClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20D5EE842C606A72004964AD /* XCRemoteSwiftPackageReference "XCAFootballDataClient" */;
+			productName = XCAFootballDataClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
